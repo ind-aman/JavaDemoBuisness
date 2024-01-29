@@ -1,6 +1,7 @@
 package com.Buisness.DataDemo.Implementation.Data;
 
 import com.Buisness.DataDemo.Core.IDataService;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +9,7 @@ import java.util.ArrayList;
 
 @Component
 @Primary
+@Lazy
 public class MySqlDataService implements IDataService {
     @Override
     public ArrayList<Integer> rerieveData() {
